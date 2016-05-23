@@ -208,23 +208,28 @@ else
 		</div>
 
 		<!-- segundo contenedor para las secciones de historia y eso -->
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="row-fluid">
-						<div id="abajo-izquierda" class="span4">
-							<jdoc:include type="modules" name="abajo-izquierda" style="well" />
-						</div>
-						<div id="abajo-centro" class="span4">
-							<jdoc:include type="modules" name="abajo-centro" style="well" />
-						</div>
-						<div id="abajo-derecha" class="span4">
-							<jdoc:include type="modules" name="abajo-derecha" style="well" />
+		<?php //if ($this->countModules('position-7') && $this->countModules('position-8')) ?>
+
+		<?php if ( $this->countModules('abajo-izquierda') || $this->countModules('abajo-centro') || $this->countModules('abajo-derecha') ): ?>
+			<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="row-fluid">
+							<div id="abajo-izquierda" class="span4">
+								<jdoc:include type="modules" name="abajo-izquierda" style="well" />
+							</div>
+							<div id="abajo-centro" class="span4">
+								<jdoc:include type="modules" name="abajo-centro" style="well" />
+							</div>
+							<div id="abajo-derecha" class="span4">
+								<jdoc:include type="modules" name="abajo-derecha" style="well" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		<?php endif; ?>
+
 	</div>
 
 	<!-- Footer -->
