@@ -43,7 +43,7 @@ JHtml::_('behavior.caption');
 								echo $this->loadTemplate('lead');
 							?>
 						</div>
-						<hr>
+						<hr class="hr-normal">
 						<?php
 							$leadingcount++;
 						?>

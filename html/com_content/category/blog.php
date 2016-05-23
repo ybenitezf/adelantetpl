@@ -86,7 +86,7 @@ JHtml::_('behavior.caption');
 					echo $this->loadTemplate('item');
 					?>
 				</div>
-				<hr>
+				<hr class="hr-normal">
 				<!-- end item -->
 				<?php $counter++; ?>
 			</div><!-- end span -->
