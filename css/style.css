@@ -79,6 +79,7 @@ body {
 
 .mini-img {
 	max-width: 100%;
+	display: block;
 }
 
 /*Para el modulo de lo más leido*/
