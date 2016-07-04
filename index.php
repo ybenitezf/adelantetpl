@@ -245,7 +245,10 @@ else
 				</a>
 			</p>
 			<p>
-				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
+				<?php echo $sitename; ?> &copy; <?php echo date('Y'); ?>
+				<a href="https://github.com/ybenitezf/adelantetpl" target="_blank">Template</a>
+				based on <strong>protostar</strong> by
+				<a href="https://github.com/ybenitezf" target="_blank">Yoel Benítez Fonseca</a>
 			</p>
 		</div>
 	</footer>
